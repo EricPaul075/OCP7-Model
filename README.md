@@ -3,7 +3,7 @@ Projet 7 d'Openclassrooms / CentraleSupélec
 
 Le projet consiste à mettre en oeuvre un modèle de "scoring crédit" s'appuyant sur des sources de données variées relatives à la demande de crédit et aux antécédants de crédit des clients. L'analyse des données brutes est représentée sur un graphe avec networkx pour montrer les relations entre les tables de données et en déduire le processus d'assemblage approprié.
 
-Le feature engineering est issu de l'analyse d'un compétiteur Kaggle (Aguiar) pour déboucher sur la création de 10 features supplémentaires.
+Le feature engineering provient de l'analyse d'un compétiteur Kaggle (Aguiar) et débouche sur la création de nombreuses features par la combinaison de différentes features et l'utilisation de différentes fonctions d'agregation sur les mêmes features provenant de différentes tables.
 
 Le dataset résultant de l'assemblage et du feature engineering a pour dimensions 356251 lignes et 797 colonnes.
 Compte tenu du nombre élevé de features, le préprocessing (traitement des valeurs manquantes, traitement du skew/kurtosis et mise à l'échelle) est effectué de manière automatisée avec possibilité de forçage concernant les valeurs manquantes.
