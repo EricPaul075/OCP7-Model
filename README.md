@@ -13,7 +13,8 @@ Le modèle de classification identifie la probabilité de risque de crédit clie
 La recherche du meilleur modèle débouche sur la sélection d'un LGBMClassifier dont les hyperparmètres sont optimisés avec optuna, à la fois sous l'angle technique et celui du métier, en utilisant les métriques appropriées (PR AUC et fbeta score).
 
 Le modèle est présenté sous la forme d'un dashboard, dont la partie calcul est réalisée par une API (fastAPI), et la partie visualisation par Streamlit. L'interprétation du modèle s'effectue sur la base des valeurs de Shapley avec la librairie Shap.
-Cette interprétation inclut l'analyse bivariée de 2 features à sélectionner qui est différenciée selon que chaque variable est numérique ou catégorielle. Le dictionnaire des features est fourni dans un onglet du dashboard.
+Cette interprétation inclut l'analyse bivariée de 2 features à sélectionner, analyse différenciée selon que chaque variable est numérique ou catégorielle (3 cas).
+Le dictionnaire des features est fourni dans un onglet du dashboard.
 
-L'API (à lancer en premier: temps de chargement 30s à 1mn) est déployée sur le web avec heroku à l'adresse: https://ocp7-dbbackend.herokuapp.com/docs
-Le dashboard graphique est déployé sur le web avec heroku à l'adresse: https://ocp7-dbfrontend.herokuapp.com
+L'API (à lancer en premier: temps de chargement 30s à 1mn) est déployée sur le web avec heroku à l'adresse: https://ocp7-dbbackend.herokuapp.com/docs.
+Le dashboard graphique (à lancer une fois l'API en fonctionnement) est déployé sur le web avec heroku à l'adresse: https://ocp7-dbfrontend.herokuapp.com.
