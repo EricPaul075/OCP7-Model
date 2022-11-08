@@ -10,9 +10,9 @@ Compte tenu du nombre élevé de features, le préprocessing (traitement des val
 
 Le modèle de classification identifie la probabilité de risque de crédit client à partir d'un jeu déséquilibré: classification binaire selon le risque de non remboursement, avec probabilité de classe associée.
 
-La recherche du meilleur modèle débouche sur la sélection d'un LGBMClassifier dont les hyperparmètres sont optimisés avec optuna, à la fois sous l'angle technique et celui du métier, en utilisant les métriques appropriées (PR AUC et fbeta score).
+La recherche du meilleur modèle débouche sur la sélection d'un LGBMClassifier dont les hyperparamètres sont optimisés avec optuna, à la fois sous l'angle technique et celui du métier, en utilisant les métriques appropriées (PR AUC et fbeta score).
 
-Le modèle est présenté sous la forme d'un dashboard, dont la partie calcul est réalisée par une API (fastAPI), et la partie visualisation par Streamlit. L'interprétation du modèle s'effectue sur la base des valeurs de Shapley avec la librairie Shap.
+L'exploitation du modèle s'effectue sous la forme d'un dashboard, dont la partie calcul est réalisée par une API (fastAPI), et la partie visualisation par Streamlit. L'interprétation du modèle s'effectue sur la base des valeurs de Shapley avec la librairie Shap.
 Cette interprétation inclut l'analyse bivariée de 2 features à sélectionner, analyse différenciée selon que chaque variable est numérique ou catégorielle (3 cas).
 Le dictionnaire des features est fourni dans un onglet du dashboard.
 
