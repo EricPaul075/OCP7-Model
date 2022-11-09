@@ -1,5 +1,5 @@
 # OCP7-scoring-model-implementation
-Projet 7 d'Openclassrooms / CentraleSupélec
+Develop and deploy to the web a machine learning model to score banking credit applications
 
 Le projet consiste à mettre en oeuvre un modèle de "scoring crédit" s'appuyant sur des sources de données variées relatives à la demande de crédit et aux antécédants de crédit des clients. L'analyse des données brutes est représentée sur un graphe avec networkx pour montrer les relations entre les tables de données et en déduire le processus d'assemblage approprié.
 
